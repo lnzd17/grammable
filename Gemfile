@@ -59,3 +59,6 @@ end
 
 #adds bootstrap
 gem 'bootstrap', '~> 4.0.0.alpha6'
+
+#adds simpleform
+gem 'simple_form'
