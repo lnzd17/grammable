@@ -1,1 +1,21 @@
-<h1>Grams</h1>
+
+<div class="grid">
+  <div class="header">
+    <h1>Grams</h1>
+  </div>
+
+  <div class="body">
+    <% @gram.each  do |gram| %>
+    <div class="message">
+      <div class="gram">
+        <%= gram.message %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+  <div class="footer">
+    <div class="footer_text">this is my footer</div>
+  </div>
+
+</div>

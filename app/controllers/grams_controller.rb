@@ -2,6 +2,7 @@ class GramsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create]
 
   def index
+    @gram = Gram.all
   end
 
   def show
@@ -36,6 +37,14 @@ class GramsController < ApplicationController
     else
       return render :edit, status: :unprocessable_entity
     end
+  end
+
+  def destroy
+    @gram = Gram.find_by_id(params[:id])
+    return render_not_found if @gram.blank?
+    @gram.destroy
+    redirect_to root_path
+
   end
 
   private
