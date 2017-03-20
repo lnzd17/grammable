@@ -1,16 +1,15 @@
 
 <div class="grid">
+
   <div class="header">
     <h1>Grams</h1>
   </div>
 
   <div class="body">
-    <% @gram.each  do |gram| %>
-    <div class="message">
+    <% @gram.each do |gram| %>
       <div class="gram">
         <%= gram.message %>
       </div>
-    </div>
     <% end %>
   </div>
 
