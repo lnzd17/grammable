@@ -48,12 +48,12 @@ class GramsController < ApplicationController
     @gram.destroy
     redirect_to root_path
   end
-  
+
 
   private
 
   def gram_params
-     params.require(:gram).permit(:message)
+     params.require(:gram).permit(:message, :image)
   end
 
   def render_not_found(status=:not_found)
