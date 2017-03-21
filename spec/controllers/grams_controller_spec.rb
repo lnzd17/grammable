@@ -149,7 +149,12 @@ RSpec.describe GramsController, type: :controller do
     it "should successfully save a new gram in our database to an authenticated user" do
       user = FactoryGirl.create(:user)
       sign_in user
-      post :create, params: {gram: {message: 'Hello!'}}
+      post :create, params: {
+        gram: {
+          message: 'Hello!',
+          image: fixture_file_upload("/picture.jpeg", 'image/jpeg')
+        }
+      }
       expect(response).to redirect_to root_path
       gram = Gram.last
       expect(gram.message).to eq('Hello!')
