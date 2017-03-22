@@ -8,8 +8,8 @@
     </p>
      <div class="gram-actions float-right">
       <% if current_user && current_user == gram.user %>
-        <%= link_to 'Edit', edit_gram_path(gram) %>
-        <%= link_to 'Destroy', gram_path(gram), method: :delete, data: {confirm: 'Are you sure?'} %>
+        <%= link_to 'Edit', edit_gram_path(gram), class:"spec" %>
+        <%= link_to 'Destroy', gram_path(gram), method: :delete, data: {confirm: 'Are you sure?'}, class:"spec" %>
       <% end %>
     </div>
     <br class="clearfix" />
@@ -17,11 +17,10 @@
       <h3>Comments</h3>
       <% gram.comments.each do |comment| %>
           <div class="comment">
-            <span class="comment_handle text">
-              	> <%= comment.user.email %>
-              -
-            </span>
-          <span class="bubble text"><%= comment.message %> </span>
+            <p class="bubble text"><%= comment.message %>   <span class="comment_handle text">
+                  &nbsp; -
+                  <%= comment.user.email %>
+              </span> </p>
           </div>
           <br/>
         <% end %>
