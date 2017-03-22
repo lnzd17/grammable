@@ -2,10 +2,18 @@
 
 body{
   background-color: #d81b60;
+  font-family: 'Lobster Two', cursive;
+  color: #3A3335;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ color:  #390099;
 }
 
 .top-nav{
   background-color: white;
+  padding-top: 15px;
+  height: 70px;
   padding-top: 15px;
 }
 
@@ -29,7 +37,7 @@ body{
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
   border: 1px solid #e8e8e8;
   margin-top: 40px;
-  padding: 0;
+  padding: 20px;
 }
 
 .card p, .card .message {
@@ -38,27 +46,26 @@ body{
 }
 
 .handle {
-  margin: 10px;
-  color: #125688;
   font-weight: bold;
   font-size: 18px;
+  color: #390099;
 }
 
-.card.form {
-  padding: 20px;
-}
+
 
 label {
   font-size: 18px;
+  font-family: 'Raleway', sans-serif;
 }
 
 input {
   font-size: 18px;
   font-weight: 400;
+  font-family: 'Raleway', sans-serif;
 }
 
 .my-btn {
-  background-color: #125688;
+  background-color: #390099;
   width: 100%;
   border: none;
   font-size: 24px;
@@ -69,11 +76,17 @@ input {
 .input.boolean {
   margin-left: 18px;
   margin-top: 5px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .input.boolean label {
   margin-top: 5px;
   line-height: 44px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.gram-actions {
+  margin-left: auto;
 }
 
 .gram-actions a {
@@ -82,24 +95,39 @@ input {
   margin-right: 20px;
 }
 
-.comments {
-  padding: 20px;
-}
 
 .comment {
   font-size: 14px;
   margin-top: 5px;
+  padding-left: 10px;
 }
 
 .comment_handle {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
 }
 
-.gram-actions {
-    margin-left: auto;
+.bubble{
+  padding: 10px;
+  background-color: #FFBF00;
+  border-radius: 5px;
 }
 
-.clear-fix{
-  clear:both;
+
+
+.text{
+  font-family: 'Raleway', sans-serif;
+}
+
+.alert{
+  font-family: 'Raleway', sans-serif;
+}
+
+
+a{
+  color: #FFBF00;
+  padding: 10px;
+  border: 1px solid #FFBF00;
+  border-radius: 5px;
+  margin:2px;
 }

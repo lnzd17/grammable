@@ -6,6 +6,9 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
@@ -17,8 +20,7 @@
       </div>
       <div class="add float-right">
         <% if current_user %>
-          Welcome, <%= current_user.email %>.
-            <%= link_to "New Post", new_gram_path %>
+          <%= link_to "New Post", new_gram_path %>
           <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
         <% else %>
           <%= link_to "Sign In", new_user_session_path %>
@@ -28,6 +30,15 @@
     </div>
     <br class="clear-fix" />
   </div>
+
+
+      <% if notice.present? %>
+          <p class="notice alert alert-info text-center"><%= notice %></p>
+      <% end %>
+      <% if alert.present? %>
+        <p class="alert alert alert-danger text-center"> <%= alert %></p>
+      <% end %>
+
 
 
 
