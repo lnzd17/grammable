@@ -1,0 +1,20 @@
+== README
+
+This is the first Ruby on Rails application I built using the TTD approach while attending FireHose Project's Software Engineering Bootcamp.
+
+=== Features
+* A user can sign in/ sign up
+* A registered user can create a post with a picture and a subtitle
+* A registered user can edit and delete their own post
+* A registered user can comment on another post 
+
+
+=== Tools
+* Rspec
+* FactoryGirl
+* Bootstrap
+* Devise
+* Simple Form
+* Carrierwave
+* Figaro
+* Fog
