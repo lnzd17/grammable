@@ -1,6 +1,6 @@
 == README
 
-This is the first Ruby on Rails application I built using the TTD approach while attending FireHose Project's Software Engineering Bootcamp.
+This is the first Ruby on Rails application I built using the TDD approach while attending FireHose Project's Software Engineering Bootcamp.
 
 === Features
 * A user can sign in/ sign up
